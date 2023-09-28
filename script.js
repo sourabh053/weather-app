@@ -13,8 +13,6 @@ let locationElm = document.querySelector(".time_location>p");
 let timeElm = document.querySelector(".time_location>span");
 let imgElm = document.querySelector(".weather_conditions img");
 let conditionElm = document.querySelector(".weather_conditions span");
-console.log(imgElm);
-console.log(conditionElm);
 
 let apiKey = "687cf6949c7942fb94095345232809";
 async function fetchAndUpdateUI(cityName){
