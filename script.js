@@ -17,7 +17,7 @@ let conditionElm = document.querySelector(".weather_conditions span");
 let apiKey = "687cf6949c7942fb94095345232809";
 async function fetchAndUpdateUI(cityName){
     try{
-        let url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`
+        let url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`
     let response = await fetch(url);
     let json = await response.json();
     if(json.error){
